@@ -9,8 +9,8 @@ def key_for_min_value(name_hash)
     puts "#{key}: #{value}"
     puts "Hi"
     if value < lowest_value || lowest_value == nil 
-     lowest_value = value 
-     lowest_key = key  
+     lowest_value = value
+     lowest_key = key
     end
 end
 lowest_key
