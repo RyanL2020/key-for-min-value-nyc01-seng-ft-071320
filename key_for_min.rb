@@ -3,16 +3,16 @@ require 'pry'
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  lowest_key = 0
-  lowest_value = 2
+  lowest_key = nil
+  lowest_value = nil
   name_hash.each do |key, value|
     puts "#{key}: #{value}"
     puts "Hi"
     #if name_hash == {}
     #  nil
     #end
-    if value > lowest_value || lowest_value == 0
-      binding.pry
+    if value < lowest_value || lowest_value == nil
+    #  binding.pry
      lowest_value = value
      lowest_key = key
     end
