@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   name_hash.detect do |key, value|
-    if key == :blake && value.filter { |num| num == 1 }
+    if key == :blake && value
     end
 end
 end
